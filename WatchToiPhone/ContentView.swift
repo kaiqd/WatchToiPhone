@@ -6,19 +6,27 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct ContentView: View {
+    @Query private var people: [Person]
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationView {
+            if people.isEmpty {
+                Text("Nenhuma pessoa encontrada.")
+            } else {
+                List(people) { person in
+                    VStack(alignment: .leading) {
+                        Text(person.name)
+                            .font(.headline)
+                        Text("Idade: \(person.age)")
+                            .font(.subheadline)
+                    }
+                }
+                .navigationTitle("Pessoas Criadas")
+            }
         }
-        .padding()
+        .modelContainer(for: [Person.self])
     }
-}
-
-#Preview {
-    ContentView()
 }

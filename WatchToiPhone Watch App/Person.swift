@@ -1,7 +1,16 @@
+//
+//  Person.swift
+//  WatchToiPhone
+//
+//  Created by Kaique Diniz on 28/11/24.
+//
+
+import SwiftData
+
 @Model
 public final class Person {
-    @Attribute var name: String
-    @Attribute var age: Int
+    @Attribute var name: String = ""
+    @Attribute var age: Int = 0
 
     init(name: String, age: Int) {
         self.name = name

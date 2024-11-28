@@ -13,5 +13,6 @@ struct WatchToiPhoneApp: App {
         WindowGroup {
             ContentView()
         }
+        .modelContainer(for: [Person.self])
     }
 }
