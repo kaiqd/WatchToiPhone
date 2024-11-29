@@ -12,7 +12,7 @@ import SwiftData
 struct WatchApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HealthKitView()
         }
         .modelContainer(for: [Person.self])
     }

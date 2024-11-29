@@ -358,6 +358,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = WatchToiPhone;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "\"Exibir os dados de saude na tela\"";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "\"Atualizar os dados de saude na tela\"";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.kaiq.WatchToiPhone;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -389,6 +391,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = WatchToiPhone;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "\"Exibir os dados de saude na tela\"";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "\"Atualizar os dados de saude na tela\"";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.kaiq.WatchToiPhone;
 				LD_RUNPATH_SEARCH_PATHS = (
